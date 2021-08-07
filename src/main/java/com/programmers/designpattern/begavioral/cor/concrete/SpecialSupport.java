@@ -1,6 +1,9 @@
-package com.programmers.designpattern.begavioral.cor;
+package com.programmers.designpattern.begavioral.cor.concrete;
 
-public class SpecialSupport extends Support{
+import com.programmers.designpattern.begavioral.cor.Trouble;
+import com.programmers.designpattern.begavioral.cor.handler.Support;
+
+public class SpecialSupport extends Support {
 
     // 이 번호만 해결가능하다.
     private int number;

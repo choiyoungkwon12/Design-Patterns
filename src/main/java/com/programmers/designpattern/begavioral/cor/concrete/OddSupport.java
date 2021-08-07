@@ -1,6 +1,9 @@
-package com.programmers.designpattern.begavioral.cor;
+package com.programmers.designpattern.begavioral.cor.concrete;
 
-public class OddSupport extends Support{
+import com.programmers.designpattern.begavioral.cor.Trouble;
+import com.programmers.designpattern.begavioral.cor.handler.Support;
+
+public class OddSupport extends Support {
 
     public OddSupport(String name) {
         super(name);

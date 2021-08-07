@@ -1,4 +1,7 @@
-package com.programmers.designpattern.begavioral.cor;
+package com.programmers.designpattern.begavioral.cor.concrete;
+
+import com.programmers.designpattern.begavioral.cor.Trouble;
+import com.programmers.designpattern.begavioral.cor.handler.Support;
 
 public class LimitSupport extends Support {
 

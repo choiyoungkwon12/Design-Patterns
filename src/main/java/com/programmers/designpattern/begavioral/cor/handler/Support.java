@@ -1,4 +1,6 @@
-package com.programmers.designpattern.begavioral.cor;
+package com.programmers.designpattern.begavioral.cor.handler;
+
+import com.programmers.designpattern.begavioral.cor.Trouble;
 
 public abstract class Support {
     private final String name;    // 트러블 해결자 이름
