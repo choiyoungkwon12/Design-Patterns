@@ -1,13 +1,12 @@
 package com.programmers.designpattern.begavioral.command.command;
 
-import com.programmers.designpattern.begavioral.command.command.Command;
-
 import java.util.Stack;
 
 public class MacroCommand implements Command {
 
     private Stack<Command> commands = new Stack<>();
 
+    // 명령들을 하나씩 실행
     @Override
     public void execute() {
         for (Command command : commands) {
@@ -17,6 +16,7 @@ public class MacroCommand implements Command {
 
     // 추가
     public void append(Command cmd) {
+        // 자기 자신을 실수로 add 하는 것 방지, 영원히 종료되지 않음
         if (cmd != this) {
             commands.push(cmd);
         }

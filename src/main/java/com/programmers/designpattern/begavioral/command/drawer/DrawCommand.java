@@ -4,6 +4,7 @@ import com.programmers.designpattern.begavioral.command.command.Command;
 
 import java.awt.*;
 
+// 점 그리기 명령을 표현한 클래스
 public class DrawCommand implements Command {
 
     // 그림 그리는 대상

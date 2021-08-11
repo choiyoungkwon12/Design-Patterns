@@ -42,6 +42,7 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
         show();
     }
 
+    // 버튼 클릭 시 발동 되는 메소드
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == clearButton){
@@ -58,6 +59,7 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
 
     }
 
+    // 마우스 드래그 이벤트
     @Override
     public void mouseDragged(MouseEvent e) {
         Command cmd = new DrawCommand(canvas,e.getPoint());
