@@ -1,4 +1,4 @@
-package com.programmers.designpattern.begavioral.command;
+package com.programmers.designpattern.begavioral.command.drawer;
 
 import java.awt.*;
 

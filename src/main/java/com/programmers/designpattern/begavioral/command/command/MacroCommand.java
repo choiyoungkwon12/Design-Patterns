@@ -1,4 +1,6 @@
-package com.programmers.designpattern.begavioral.command;
+package com.programmers.designpattern.begavioral.command.command;
+
+import com.programmers.designpattern.begavioral.command.command.Command;
 
 import java.util.Stack;
 

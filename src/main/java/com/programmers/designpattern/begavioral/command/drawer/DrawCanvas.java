@@ -1,4 +1,6 @@
-package com.programmers.designpattern.begavioral.command;
+package com.programmers.designpattern.begavioral.command.drawer;
+
+import com.programmers.designpattern.begavioral.command.command.MacroCommand;
 
 import java.awt.*;
 
