@@ -1,6 +1,8 @@
-package com.programmers.designpattern.structural.bridge;
+package com.programmers.designpattern.structural.bridge.function;
 
-public class CountDisplay extends Display{
+import com.programmers.designpattern.structural.bridge.implement.DisplayImpl;
+
+public class CountDisplay extends Display {
     public CountDisplay(DisplayImpl impl) {
         super(impl);
     }

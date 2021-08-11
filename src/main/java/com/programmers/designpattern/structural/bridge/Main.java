@@ -1,5 +1,9 @@
 package com.programmers.designpattern.structural.bridge;
 
+import com.programmers.designpattern.structural.bridge.function.CountDisplay;
+import com.programmers.designpattern.structural.bridge.function.Display;
+import com.programmers.designpattern.structural.bridge.implement.StringDisplayImpl;
+
 public class Main {
     public static void main(String[] args) {
         Display display1 = new Display(new StringDisplayImpl("Hello, Korea."));

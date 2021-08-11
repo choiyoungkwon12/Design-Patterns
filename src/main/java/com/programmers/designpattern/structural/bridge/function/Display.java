@@ -1,4 +1,6 @@
-package com.programmers.designpattern.structural.bridge;
+package com.programmers.designpattern.structural.bridge.function;
+
+import com.programmers.designpattern.structural.bridge.implement.DisplayImpl;
 
 public class Display {
     private DisplayImpl impl;

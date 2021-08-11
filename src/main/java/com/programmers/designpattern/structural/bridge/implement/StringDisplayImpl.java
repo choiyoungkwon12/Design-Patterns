@@ -1,6 +1,4 @@
-package com.programmers.designpattern.structural.bridge;
-
-import java.nio.charset.StandardCharsets;
+package com.programmers.designpattern.structural.bridge.implement;
 
 public class StringDisplayImpl extends DisplayImpl {
     // 표시해야 할 문자열
