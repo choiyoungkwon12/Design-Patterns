@@ -2,14 +2,17 @@ package com.programmers.designpattern.structural.bridge;
 
 import com.programmers.designpattern.structural.bridge.function.CountDisplay;
 import com.programmers.designpattern.structural.bridge.function.Display;
-import com.programmers.designpattern.structural.bridge.implement.StringDisplayImpl;
+import com.programmers.designpattern.structural.bridge.implement.HyphenStringDisplayImpl;
+import com.programmers.designpattern.structural.bridge.implement.EqualsStringDisplayImpl;
 
 public class Main {
     public static void main(String[] args) {
-        Display display1 = new Display(new StringDisplayImpl("Hello, Korea."));
-        Display display2 = new CountDisplay(new StringDisplayImpl("Hello, World."));
-        CountDisplay display3 = new CountDisplay(new StringDisplayImpl("Hello, Universe."));
+        Display display = new Display(new HyphenStringDisplayImpl("Hello, Korea."));
+        Display display1 = new Display(new EqualsStringDisplayImpl("Hello, Korea."));
+        Display display2 = new CountDisplay(new HyphenStringDisplayImpl("Hello, World."));
+        CountDisplay display3 = new CountDisplay(new HyphenStringDisplayImpl("Hello, Universe."));
 
+        display.display();
         display1.display();
         display2.display();
         display3.display();

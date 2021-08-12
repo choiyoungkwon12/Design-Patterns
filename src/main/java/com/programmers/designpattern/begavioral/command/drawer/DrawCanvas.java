@@ -4,6 +4,7 @@ import com.programmers.designpattern.begavioral.command.command.MacroCommand;
 
 import java.awt.*;
 
+// 그림그리는 대상
 public class DrawCanvas extends Canvas implements Drawable {
 
     // 그림 그리는 색
@@ -37,7 +38,7 @@ public class DrawCanvas extends Canvas implements Drawable {
         // 점 색깔 지정
         g.setColor(color);
 
-        // 점의 크기(원을 표시)
+        // 원을 크기만큼 표시
         g.fillOval(x - radius, y - radius, radius * 2, radius * 2);
     }
 }

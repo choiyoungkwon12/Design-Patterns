@@ -2,6 +2,7 @@ package com.programmers.designpattern.begavioral.command.command;
 
 import java.util.Stack;
 
+// 명령 집합
 public class MacroCommand implements Command {
 
     private Stack<Command> commands = new Stack<>();

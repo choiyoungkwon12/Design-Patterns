@@ -1,6 +1,6 @@
 package com.programmers.designpattern.structural.bridge.implement;
 
-public class StringDisplayImpl extends DisplayImpl {
+public class HyphenStringDisplayImpl extends DisplayImpl {
     // 표시해야 할 문자열
     private String string;
 
@@ -8,7 +8,7 @@ public class StringDisplayImpl extends DisplayImpl {
     private int width;
 
     // 생성자에서 전달된 문자열 string을 필드에 저장
-    public StringDisplayImpl(String string) {
+    public HyphenStringDisplayImpl(String string) {
         this.string = string;
 
         // 바이트 단위의 길이도 필드에 저장 후 나중에 사용

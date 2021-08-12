@@ -13,7 +13,7 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
     // 그림 그린 이력
     private MacroCommand history = new MacroCommand();
 
-    // 그림 그리는 영역
+    // 그림 그리는 영역 설정
     private DrawCanvas canvas = new DrawCanvas(400, 400, history);
 
     // 제거 버튼
@@ -22,7 +22,8 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
     // Undo 버튼
     private JButton undoButton = new JButton("undo");
 
-    public Main(String title){
+    // 마우스 클릭등의 이벤트를 받아들이기 위한 리스너 설정
+    public Main(String title) {
         super(title);
 
         this.addWindowListener(this);
@@ -45,37 +46,37 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
     // 버튼 클릭 시 발동 되는 메소드
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == clearButton){
+        if (e.getSource() == clearButton) {
             history.clear();
             canvas.repaint();
-        }else if(e.getSource() == undoButton){
+        } else if (e.getSource() == undoButton) {
             history.undo();
             canvas.repaint();
         }
     }
 
-    @Override
-    public void mouseMoved(MouseEvent e) {
-
-    }
-
     // 마우스 드래그 이벤트
     @Override
     public void mouseDragged(MouseEvent e) {
-        Command cmd = new DrawCommand(canvas,e.getPoint());
+        Command cmd = new DrawCommand(canvas, e.getPoint());
         history.append(cmd);
         cmd.execute();
-    }
-
-    @Override
-    public void windowOpened(WindowEvent e) {
-
     }
 
     @Override
     public void windowClosing(WindowEvent e) {
         System.exit(0);
     }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+
+    }
+    @Override
+    public void windowOpened(WindowEvent e) {
+
+    }
+
 
     @Override
     public void windowClosed(WindowEvent e) {
