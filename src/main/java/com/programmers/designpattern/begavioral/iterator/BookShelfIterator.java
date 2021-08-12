@@ -1,22 +1,18 @@
 package com.programmers.designpattern.begavioral.iterator;
 
-public class BookShelfIterator implements Iterator {
+public class BookShelfIterator<T> implements Iterator {
 
-    private BookShelf bookShelf;
+    private BookShelf<T> bookShelf;
     private int Index;
 
-    public BookShelfIterator(BookShelf bookShelf) {
+    public BookShelfIterator(BookShelf<T> bookShelf) {
         this.bookShelf = bookShelf;
         this.Index = 0;
     }
 
     @Override
     public boolean hasNext() {
-        if (Index < bookShelf.getLength()) {
-            return true;
-        } else {
-            return false;
-        }
+        return Index < bookShelf.getLength();
     }
 
     @Override

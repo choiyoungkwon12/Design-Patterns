@@ -1,6 +1,6 @@
 package com.programmers.designpattern.begavioral.iterator;
 
-public class BookShelf implements Aggregate {
+public class BookShelf<T> implements Aggregate {
 
     private Book[] books;
     private int last = 0;
@@ -23,7 +23,7 @@ public class BookShelf implements Aggregate {
     }
 
     @Override
-    public Iterator iterator() {
+    public Iterator<T> iterator() {
         return new BookShelfIterator(this);
     }
 }
