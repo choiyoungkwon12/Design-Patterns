@@ -40,7 +40,7 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
         getContentPane().add(mainBox);
 
         pack();
-        show();
+        setVisible(true);
     }
 
     // 버튼 클릭 시 발동 되는 메소드
