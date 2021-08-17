@@ -1,4 +1,4 @@
-package com.programmers.designpattern.begavioral.mediator;
+package com.programmers.designpattern.begavioral.mediator.mediator;
 
 public interface Mediator {
     public abstract void createColleagues();

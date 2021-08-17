@@ -1,6 +1,6 @@
 package com.programmers.designpattern.begavioral.mediator.colleague;
 
-import com.programmers.designpattern.begavioral.mediator.Mediator;
+import com.programmers.designpattern.begavioral.mediator.mediator.Mediator;
 
 import java.awt.*;
 import java.awt.event.ItemEvent;

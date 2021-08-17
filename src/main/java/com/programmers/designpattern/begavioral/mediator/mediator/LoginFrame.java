@@ -3,7 +3,6 @@ package com.programmers.designpattern.begavioral.mediator.mediator;
 import com.programmers.designpattern.begavioral.mediator.colleague.ColleagueButton;
 import com.programmers.designpattern.begavioral.mediator.colleague.ColleagueCheckbox;
 import com.programmers.designpattern.begavioral.mediator.colleague.ColleagueTextField;
-import com.programmers.designpattern.begavioral.mediator.Mediator;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
