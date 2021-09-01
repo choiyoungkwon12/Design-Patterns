@@ -1,11 +1,12 @@
-package com.programmers.designpattern.begavioral.templete.network;
+package com.programmers.designpattern.begavioral.template.network;
+
 
 /**
  * Class of social network
  */
-public class Facebook extends Network {
+public class Twitter extends Network {
 
-    public Facebook(String userName, String password) {
+    public Twitter(String userName, String password) {
         this.userName = userName;
         this.password = password;
     }
@@ -18,14 +19,14 @@ public class Facebook extends Network {
             System.out.print("*");
         }
         simulateNetworkLatency();
-        System.out.println("\n\nLogIn success on Facebook");
+        System.out.println("\n\nLogIn success on Twitter");
         return true;
     }
 
     public boolean sendData(byte[] data) {
         boolean messagePosted = true;
         if (messagePosted) {
-            System.out.println("Message: '" + new String(data) + "' was posted on Facebook");
+            System.out.println("Message: '" + new String(data) + "' was posted on Twitter");
             return true;
         } else {
             return false;
@@ -33,7 +34,7 @@ public class Facebook extends Network {
     }
 
     public void logOut() {
-        System.out.println("User: '" + userName + "' was logged out from Facebook");
+        System.out.println("User: '" + userName + "' was logged out from Twitter");
     }
 
     private void simulateNetworkLatency() {

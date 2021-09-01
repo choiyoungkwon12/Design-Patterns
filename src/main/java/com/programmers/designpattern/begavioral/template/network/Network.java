@@ -1,4 +1,4 @@
-package com.programmers.designpattern.begavioral.templete.network;
+package com.programmers.designpattern.begavioral.template.network;
 
 public abstract class Network {
     String userName;

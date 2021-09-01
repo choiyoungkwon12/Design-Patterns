@@ -1,8 +1,8 @@
-package com.programmers.designpattern.begavioral.templete;
+package com.programmers.designpattern.begavioral.template;
 
-import com.programmers.designpattern.begavioral.templete.network.Facebook;
-import com.programmers.designpattern.begavioral.templete.network.Network;
-import com.programmers.designpattern.begavioral.templete.network.Twitter;
+import com.programmers.designpattern.begavioral.template.network.Facebook;
+import com.programmers.designpattern.begavioral.template.network.Network;
+import com.programmers.designpattern.begavioral.template.network.Twitter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
